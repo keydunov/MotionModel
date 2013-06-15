@@ -211,6 +211,14 @@ module MotionModel
       @collection.length
     end
     alias_method :count, :length
+
+    def [](index)
+      @collection[index]
+    end
+
+    def any?
+      @collection.any?
+    end
     
     # Pushes an object onto an association. For e.g.:
     #
